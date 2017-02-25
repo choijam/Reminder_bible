@@ -13,9 +13,9 @@ This is for Christian who are really want to memorize or recite phrase of the Bi
 Espectially, I think It is verry useful Navigator mission because it based on their course and guideline.
 
 
-# Easy Find
-# Easy check
-# Easy approachableness
+###### Easy Find
+###### Easy check
+###### Easy approachableness
 
 I used 
 * Ruby on Rails

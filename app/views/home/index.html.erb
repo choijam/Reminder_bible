@@ -1,0 +1,50 @@
+
+
+
+ <div class='container'>
+  <h1>
+    NAVIGATOR </h1>
+    <h2>주제별 성경암송</h2>
+ 
+  <p>
+    Random selection of button styles. May change over time as I get alot of stupid ideas. Feel free to follow me on  <a href="https://twitter.com/simonbusborg" target="_blank" class="twitter">twitter</a>
+  </p>
+  <div class="button-container">
+    
+    
+    <%= link_to "/home/verse60", :action => 'go' do %>
+    	<div class='button -regular center' onclick="../home/verse60">60 구절</a></div>
+	<% end %>
+    
+    
+    <div class='button -dark center'>Touch me</div>
+    
+    <div class='button -green center'>Just like that</div>
+    
+    <div class='button -blue center'>And that, oh, yeah</div>
+        
+    <div class='button -salmon center'>Now that I like</div>
+    
+    <div class='button -sun center'>God, that's so nice</div>
+    
+    <div class='button -alge center'>Now lower down</div>
+    
+    <div class='button -flower center'>Where the figs lie</div>
+    
+
+    
+  </div>
+</div>
+
+<script>
+	var	body     = document.getElementsByTagName('body')[0],
+    twitter  = document.getElementsByClassName('twitter')[0];
+
+twitter.addEventListener("mouseover",function() {
+    body.classList.add('linked');
+},false);
+
+twitter.addEventListener("mouseout", function() {
+    body.classList.remove('linked');
+}, false);
+</script>
