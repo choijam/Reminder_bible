@@ -1,0 +1,18 @@
+
+<div class="row">
+<h1>그리스도의 확신</h1>
+</div>
+
+<div class="row">
+    <% @test.each do |t|%>
+    <div class="panel panel-warning" style="display : block ; ">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%=t.sub_title%>  |  <%=t.passage%></h3>
+      </div>
+      <div class="panel-body">
+        <%=t.content%>
+      </div>
+    </div>
+    <%end%>
+</div>
+

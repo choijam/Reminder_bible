@@ -23,4 +23,8 @@ class HomeController < ApplicationController
     
   end
   
+  def details
+    @test=Verse.all
+  end
+  
 end
