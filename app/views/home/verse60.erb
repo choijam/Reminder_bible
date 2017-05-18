@@ -1,19 +1,48 @@
-<!--<% i=1%>-->
-<!--<%@result.each do |link|%>-->
-  
-<!--    <%=i%>-->
-<!--    <%=link.content%><br><br>-->
-  
-<!--      <%i+=1%>-->
+<div class="container">
     
-<!--    <%end%>-->
+    <form action="/home/verse60_details" method="get">
+         <input type="hidden" name="chapter" value="0">
+         <input class='button -alge center' type="submit" value="A. 새로운 삶">
+    </form>
+    
+    <form action="/home/verse60_details" method="get">
+         <input type="hidden" name="chapter" value="1">
+         <input class='button -alge center' type="submit" value="B. 그리스도를 전파함">
+    </form>
+    
+    <form action="/home/verse60_details" method="get">
+         <input type="hidden" name="chapter" value="2">
+         <input class='button -alge center' type="submit" value="C. 하나님을 의뢰함">
+    </form>    
+
+    <form action="/home/verse60_details" method="get">
+         <input type="hidden" name="chapter" value="3">
+         <input class='button -alge center' type="submit" value="D. 그리스도 제자의 자격">
+    </form>
+  
+  
+    <form action="/home/verse60_details" method="get">
+         <input type="hidden" name="chapter" value="4">
+         <input class='button -alge center' type="submit" value="E. 그리스도를 닮아 감">
+    </form> 
+
+</div>
+      
 
 
 
-<a href="verse60_A">A. 새로운 삶</a>
-<a href="verse60_B">B. 그리스도를 전파함</a>
-<a href="verse60_C">C. 하나님을 의뢰함</a>
-<a href="verse60_D">D. 그리스도 제자의 자격</a>
-<a href="verse60_E">E. 그리스도를 닮아 감</a>
 
 
+<script>
+	var	body     = document.getElementsByTagName('body')[0],
+    twitter  = document.getElementsByClassName('twitter')[0];
+
+twitter.addEventListener("mouseover",function() {
+    body.classList.add('linked');
+},false);
+
+twitter.addEventListener("mouseout", function() {
+    body.classList.remove('linked');
+}, false);
+</script>
+    

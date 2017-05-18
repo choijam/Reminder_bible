@@ -1,9 +1,9 @@
 <div class="row">
-<h1>그리스도의 확신</h1>
+<h1><%=@verse.first.title%></h1>
 </div>
 
 <div class="row">
-    <% @test.each do |t|%>
+    <% @verse.each do |t|%>
     <div class="panel panel-warning" style="display : block ; ">
       <div class="panel-heading">
         <h3 class="panel-title"><%=t.sub_title%>  |  <%=t.passage%></h3>
@@ -14,4 +14,7 @@
     </div>
     <%end%>
 </div>
+
+
+
 

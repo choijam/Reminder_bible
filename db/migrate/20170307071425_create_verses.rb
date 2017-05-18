@@ -3,6 +3,7 @@ class CreateVerses < ActiveRecord::Migration
     create_table :verses do |t|
       
       t.integer :group
+      t.integer :s_group
       t.string :title
       t.string :sub_title
       t.string :content

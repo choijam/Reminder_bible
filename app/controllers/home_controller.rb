@@ -16,12 +16,18 @@ class HomeController < ApplicationController
   end
   
   def verse60
-    uri = URI("https://quizlet.com/1987812/60-krvniv-flash-cards/")
-    html_doc = Nokogiri::HTML(Net::HTTP.get(uri))
+    # uri = URI("https://quizlet.com/1987812/60-krvniv-flash-cards/")
+    # html_doc = Nokogiri::HTML(Net::HTTP.get(uri))
     
-    @result=html_doc.css("span.TermText.notranslate.lang-ko")
+    # @result=html_doc.css("span.TermText.notranslate.lang-ko")
     
   end
+  
+  def verse60_details
+    @chapter=params[:chapter]
+    @verse=Verse.where(:group => 1)
+  end
+  
   
   def details
     @test=Verse.all

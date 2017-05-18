@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20170307071425) do
 
   create_table "verses", force: :cascade do |t|
     t.integer  "group"
+    t.integer  "s_group"
     t.string   "title"
     t.string   "sub_title"
     t.string   "content"
