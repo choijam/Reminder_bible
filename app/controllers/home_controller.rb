@@ -25,7 +25,7 @@ class HomeController < ApplicationController
   
   def verse60_details
     @chapter=params[:chapter]
-    @verse=Verse.where(:group => 1)
+    @verse=Verse.where(:group => 1).where(:s_group => @chapter)
   end
   
   
