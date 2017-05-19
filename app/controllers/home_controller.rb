@@ -8,7 +8,7 @@ class HomeController < ApplicationController
     # html_doc.css("div.textBody//p//text()").each do |link|
     #   puts puts "#{i}번째"
     #   puts link.content
-    #   i+=1
+    #   i+=1=
     
     # end
 
