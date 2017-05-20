@@ -30,7 +30,7 @@ class HomeController < ApplicationController
   
   
   def details
-    @test=Verse.all
+    @test=Verse.where(:group => 0)
   end
   
 end
