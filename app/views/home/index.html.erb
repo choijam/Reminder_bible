@@ -6,18 +6,32 @@
     <h2>주제별 성경암송</h2><br>
 
   <!--<div class="button-container">-->
+  
+    <form action="/home/details" method="get">
+         <input type="hidden" name="chapter" value="0">
+         <input class='button -dark center' style="width: 100%"  type="submit" value="그리스도인의 확신">
+    </form><br>
     
-    <%= link_to "/home/details", :action => 'go' do %>
-        <div class='button -dark center'>그리스도인의 확신</div>
-    <% end %><br>
-    
- <!--   <%= link_to "/home/verse60", :action => 'go' do %>-->
- <!--   	<div class='button -green center'>그리스도인의 생활지침</div>-->
-	<!--<% end %><br>-->
+    <form action="/home/details" method="get">
+         <input type="hidden" name="chapter" value="2">
+         <input class='button -green center' style="width: 100%"  type="submit" value="그리스도인의 생활지침">
+    </form><br>
     
     <%= link_to "/home/verse60", :action => 'go' do %>
     	<div class='button -regular center'>60 구절</div>
-	<% end %><br>
+	  <% end %><br>
+    
+ <!--   <%= link_to "/home/details", :action => 'go' do %>-->
+ <!--       <div class='button -dark center'>그리스도인의 확신</div>-->
+ <!--   <% end %><br>-->
+    
+ <!--   <%= link_to "/home/details", :action => 'go' do %>-->
+ <!--   	<div class='button -green center'>그리스도인의 생활지침</div>-->
+	<!--<% end %><br>-->
+    
+ <!--   <%= link_to "/home/verse60", :action => 'go' do %>-->
+ <!--   	<div class='button -regular center'>60 구절</div>-->
+	<!--<% end %><br>-->
 	
 	<!--<%= link_to "/home/verse60", :action => 'go' do %>-->
  <!--       <div class='button -blue center'>전도를 위한 암송</div>-->

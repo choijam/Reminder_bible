@@ -30,7 +30,8 @@ class HomeController < ApplicationController
   
   
   def details
-    @test=Verse.where(:group => 0)
+    @chapter=params[:chapter]
+    @test=Verse.where(:group => @chapter)
   end
   
 end
