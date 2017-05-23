@@ -78,15 +78,13 @@ span {
 }
 
 h2{
-      text-align: center;
-  
-   transition: opacity 180ms ease;
-
+  text-align: center;
+  transition: opacity 180ms ease;
   color: $dark;
 }
 
 p {
-  max-width: 460px;
+  //max-width: 460px;
   margin: 0 auto;
 
   transition: color 180ms ease;
@@ -95,7 +93,7 @@ p {
   color: rgba($dark, .6);
 
   font-weight: 400;
-  line-height: 1.5;
+
 }
 
 a, a:visited {

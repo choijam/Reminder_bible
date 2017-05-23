@@ -1,7 +1,16 @@
 <style>
-  p{font-size:1rem;}
+#aboutcomment{
+  font-size:1rem;}
+#aboutme p{
+ 
+    margin-bottom: 0px;
+    color: black;
+
+}
 </style>
+
 <div class='container'>
+     <div class="fb-like" data-href="https://mynavi.herokuapp.com/" style="text-align:right;" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div><br>
   <h1>NAVIGATOR </h1>
     <h2>주제별 성경암송</h2><br>
 
@@ -52,18 +61,36 @@
     
   <!--</div>-->
 </div><br><br>
+    
 
 
-
-<div class="container" align="center" style="bottom: 0;">
-  <p>If you have any questions or problems with MYNAVI.</p>
-  <P>Please let me know, It will be really useful for me.</P>
-  <p>And, Thank you for using my service :)</p><br>
+<div class='container' >
+    <div id="aboutcomment">
+      <p>If you have any questions or problems with MYNAVI.</p>
+      <P>Please let me know, It will be really useful for me.</P>
+      <p>And, Thank you for using my service :)</p><br>
+    </div>
+    
+    <div id="aboutme">
+        <p>Choi Ji Hye</p> 
+        <p>Choijam@likelion.org</p>
+    </div>
   
-  Yeungnam National University, <br> Computer Science Engineering<br>
-  Choi Ji Hye<br>
-  Choijam@likelion.org
+ 
 </div>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9&appId=1700658206906095";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 
 <script>
 	var	body     = document.getElementsByTagName('body')[0],
