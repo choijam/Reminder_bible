@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'home/verse60'
   get 'home/details'
   get 'home/verse60_details'
+  get 'home/mytest'
+  post 'home/checker'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

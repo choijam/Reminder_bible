@@ -34,4 +34,16 @@ class HomeController < ApplicationController
     @test=Verse.where(:group => @chapter)
   end
   
+  def mytest
+    offset = rand(Verse.where(:group=>0).count)
+    @random_verse=Verse.where(:group => 0).offset(offset).first
+    @content=Answer.last
+  end
+  
+  def checker
+    answer = Answer.new
+    answer.content=params[:content]
+    answer.save
+  end
+
 end
