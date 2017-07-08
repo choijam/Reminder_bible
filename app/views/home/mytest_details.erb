@@ -51,10 +51,14 @@ form 태그는 빼야합니다.
 <div class="letter">
   <p>문제는 랜덤으로 출제됩니다.</p>
   
-  <div id="question">
+  
   <h4><%=@random_verse.passage%></h4>
-  <%=@random_verse.content%>
+  
+  <div id="question">
+    <%=@random_verse.content%>
   </div>
+  
+  <br><br>
   
   
   <div class="row">
@@ -62,6 +66,8 @@ form 태그는 빼야합니다.
       <textarea id="textarea1" name="content"class="materialize-textarea"></textarea>
        <label for="textarea1">정답 입력</label>
       <button class="waves-effect waves-light btn" id="mybutton">제출</button>
+        <button class="waves-effect waves-light btn" id="mybutton">다음 문제</button>
+          <button class="waves-effect waves-light btn" id="mybutton">그만할래요</button>
       </div>
   </div>
   
@@ -89,16 +95,20 @@ $('#mybutton').click(function(){
  
     
     success: function(){
-      for (var i = 3; i < question.length; i++) {
-        if(question.charAt(i)==content.charAt(i-3)){
+        //alert(question.charAt(5));
+        //alert(content);
+      for (var i = 5; i < question.length; i++) {
+      
+        if(question.charAt(i)==content.charAt(i-5)){
           
-          res += content.charAt(i-3);
+          res += content.charAt(i-5);
           //alert(content.charAt(i-3));
         
         }
         else{
           cls = "red";
-          res +="<span style=\"color: red\">"+content.charAt(i-3)+"</span>";
+          res +="<span style=\"color: red\">"+content.charAt(i-5)+"</span>";
+           //alert(content.charAt(i-3));
         }
           cls="";
         //alert(question.charAt(i));
